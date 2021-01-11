@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="149.0" layoutY="35.0" prefHeight="49.0" prefWidth="329.0" text="Producer Consumer" textFill="#cd3232">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="41.0" layoutY="106.0" prefHeight="17.0" prefWidth="230.0" text="Enter directory name to begin search:" />
+      <Label layoutX="41.0" layoutY="147.0" prefHeight="17.0" prefWidth="201.0" text="Filename to search for:" />
+      <TextField fx:id="directoryName"  layoutX="271.0" layoutY="101.0" prefHeight="27.0" prefWidth="306.0" />
+      <TextField  fx:id="inputFileName" layoutX="271.0" layoutY="142.0" prefHeight="27.0" prefWidth="306.0" />
+      <Button fx:id="searchBtn" onAction="#searchHandler" layoutX="41.0" layoutY="187.0" mnemonicParsing="false" text="Search" />
+      <TextArea fx:id="outputList" layoutX="41.0" layoutY="228.0" prefHeight="133.0" prefWidth="537.0" />
+      <Label layoutX="149.0" layoutY="381.0" prefHeight="17.0" prefWidth="70.0" text="Files Found:" />
+      <Label fx:id="countNum" layoutX="234.0" layoutY="381.0" text="0" textFill="#d01f0f" />
+   </children>
+</Pane>
